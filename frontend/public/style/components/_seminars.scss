@@ -1,0 +1,155 @@
+.seminarsWrapper {
+    width: 65%;
+    text-align: left;
+}
+.seminarHeading {
+    margin-bottom: 5%;
+}
+.singleSeminar {
+    width: 100%;
+    margin-bottom: 8%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    //border-image: linear-gradient(45deg, $red, $white1) 1;
+    border-width: 6px;
+    background-color: $darkBlue2;
+    color: $white1;
+    font-weight: normal;
+    //font-size: 1.2em;
+
+    display: flex;
+    justify-content: space-between;
+}
+.singleSeminar__left {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.seminarButton {
+    width: max-content;
+    padding: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    background-color: $darkBlue2;
+    color: $white1;
+    font-weight: normal;
+    font-size: 1.2em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.seminarButton:hover {
+    cursor: pointer;
+    color: $pink1 !important;
+}
+.seminarCurrentPath {
+    margin-bottom: 8%;
+}
+
+
+.popupAnchor {
+    display: flex;
+    margin: auto;
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    padding: 0 2% 0 2%;
+    position: fixed;
+    width: 30%;
+    min-height: 50vh;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 25%;
+    background-color: $darkBlue1;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: .64s ;
+    &:target {
+        visibility: visible;
+        opacity: 1;
+    }
+    &__close {
+        color: $white1;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 2em;
+
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+    }
+    &__close:hover {
+        color: $pink1;
+    }
+}
+.popup img {
+    width: 100%;
+    margin: 10% 0 10% 0;
+    border: none !important;
+    @media all and (max-width: $break-1){
+        width: 80%;
+        margin-left: 10%;
+    }
+    @media all and (max-width: $break-2){
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+.popupInner {
+    height: 50vh;
+    width: auto;
+    overflow: auto;
+    padding: 2.5% 27.5% 50% 27.5%;
+    @media all and (max-width: $break-1){
+        padding: 2.5% 8% 50% 8%;
+        font-size: 0.7em;
+    }
+    @media all and (max-width: $break-2){
+        padding: 2.5% 8% 50% 8%;
+        font-size: 0.7em;
+    }
+}
+.popupHeadline {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.popupHeadline a {
+    font-size: 1.8em;
+    border-color: $pink1;
+    border-bottom-style: solid;
+    border-width: 6px;
+    color: $white1;
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.popupHeadline a:hover {
+    border-color: $white1;
+    color: $pink1;
+}
+.popupInner h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.6em;
+}
+.popupInner p {
+    padding-top: 0;
+    margin-top: 0;
+    width: max-content;
+}

@@ -1,0 +1,32 @@
+.homepageWrapper {
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+}
+.homepageContent {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.homepageHeader {
+    width: 100%;
+    text-align: center;
+}
+.homepageLogin {
+    border-bottom-style: solid;
+    border-color: $pink1;
+    padding: 1%;
+    font-size: 1.5em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.homepageLogin:hover {
+    color: $pink1;
+    cursor: pointer;
+    border-color: $white1;
+}

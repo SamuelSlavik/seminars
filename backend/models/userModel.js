@@ -14,7 +14,11 @@ const userSchema = new mongoose.Schema({
         // 2, 3, 3B, 4B
         type: String,
         required: true,
+    },
+    lessons: {
+        type: Number,
+        required: true,
     }
 });
 
-module.export = User = mongoose.model("user", userSchema);
+module.exports = User = mongoose.model("user", userSchema);
